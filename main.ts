@@ -1,3 +1,7 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level`)
+    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(8, 8))
+})
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     lemur_man_hehehehohohohahaha,
@@ -9,7 +13,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 function tilemap2 () {
     tiles.setCurrentTilemap(tilemap`test`)
     scene.cameraFollowSprite(lemur_man_hehehehohohohahaha)
-    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(32, 32))
+    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(16, 16))
 }
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
