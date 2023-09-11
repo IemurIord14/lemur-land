@@ -1,6 +1,6 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level`)
-    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(8, 8))
+    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(4, 14))
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -22,6 +22,10 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     true
     )
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`test`)
+    tiles.placeOnTile(lemur_man_hehehehohohohahaha, tiles.getTileLocation(11, 17))
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
